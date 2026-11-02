@@ -1,0 +1,19 @@
+year,season,hostCity,totalMedals,summerMedals,winterMedals,hostNationMedals
+1992,Summer/Winter,Barcelona / Albertville,310,257,53,22
+1994,Winter,Lillehammer,314,0,61,26
+1996,Summer,Atlanta,320,271,0,101
+1998,Winter,Nagano,318,0,68,10
+2000,Summer,Sydney,305,300,5,58
+2002,Winter,Salt Lake City,316,0,78,34
+2004,Summer,Athens,318,301,0,16
+2006,Winter,Torino,325,0,84,11
+2008,Summer,Beijing,335,302,0,100
+2010,Winter,Vancouver,330,0,86,26
+2012,Summer,London,340,302,0,65
+2014,Winter,Sochi,342,0,98,33
+2016,Summer,Rio de Janeiro,350,306,0,19
+2018,Winter,PyeongChang,345,0,102,17
+2020,Summer,Tokyo (2021),363,339,0,58
+2022,Winter,Beijing,352,0,109,15
+2024,Summer,Paris,348,329,0,64
+2026,Winter,Milano-Cortina,334,0,116,28

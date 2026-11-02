@@ -1,0 +1,117 @@
+================================================================================
+GLOBAL OLYMPIC SPORTS PERFORMANCE ANALYSIS (1992 - 2026)
+Hinglish Voiceover Presentation Script (6 to 7 Minutes)
+Target: Indian Professional Accent (ElevenLabs 'Arjun'/'Kabir', Murf.ai 'Rohan')
+================================================================================
+
+[0:00 - 0:45] PART 1: INTRODUCTION & OLYMPIC BIG DATA SCOPE
+(Tone: Confident, energetic, welcoming)
+
+"Hello everyone, swagat hai aap sabhi ka Global Olympic Sports Performance Analytics platform par!
+
+Olympic Games duniya ka sabse bada aur prestigious sporting event hai, jahan nations apni sporting excellence showcase karte hain. Lekin 1992 se lekar 2026 tak ke 34 saalon ke data ko analyze karna hamesha se ek bohot bada challenge raha hai — kyunki yahan Summer aur Winter dono games ka data hai, over 60 countries hain, aur 50 se zyada diverse sporting disciplines hain.
+
+Olympic performance sirf athletic capability nahi dikhata, balki yeh kisi bhi country ke sports infrastructure, athlete development programs aur unke financial investments ki efficiency ko reflect karta hai.
+
+Isliye humne develop kiya hai yeh Tableau-grade comprehensive analytics dashboard, jo 3 key stakeholders ki real-world problem statements ko direct data-driven answers deta hai. Chaliye ek-ek karke teeno scenarios ko deeply explore karte hain." [pause 1s]
+
+--------------------------------------------------------------------------------
+
+[0:45 - 2:05] PART 2: SCENARIO 1 — MS. PRIYA (NOC PERFORMANCE STRATEGIST)
+(Tone: Strategic, analytical, executive)
+
+"Sabse pehle milte hain hamari pehli stakeholder se — Ms. Priya, jo ek National Olympic Committee mein Performance Strategist hain.
+
+Priya ka challenge hai upcoming Olympic cycle ke liye national funding allocate karna: kaun se sports categories mein invest karein jahan hamare athletes sabse zyada competitive hon, aur kin disciplines se funding withdraw karein?
+
+Priya refer karti hain hamare 'Avg Medals per Athlete by Sport Category' horizontal bar chart ko. Yahan data ek shocking revelation deta hai:
+
+Rowing 6.916 medals per athlete ke saath pure Olympic spectrum mein highest medal yield generate karta hai! Iske theek peeche Shooting hai at 6.731 medals per athlete, followed by Swimming at 5.82 aur Canoeing at 5.41. 
+
+Iska matlab kya hai? Single athlete multiple boat classes ya multiple shooting events mein participate karke country ke liye multiple medals la sakta hai. Dusri taraf, Football at 0.69 ya Basketball at 0.82 jaise large team sports mein 20 se 25 athletes bhejne ke baad bhi maximum ek medal milta hai.
+
+Priya is insight ko cross-reference karti hain hamare Global Performance Metrics chart ke saath, jahan United States 735 medals aur China 696 medals ke saath global benchmarks hain. 
+
+Priya ka recommendation clear hai: middle-tier nations ko apne limited resources Rowing aur Shooting jaise high-yield categories mein concentrate karne chahiye taaki future Games mein unka overall medal haul maximize ho sake." [pause 1.5s]
+
+--------------------------------------------------------------------------------
+
+[2:05 - 3:35] PART 3: SCENARIO 2 — MR. CARLOS (SPORTS INVESTMENT ANALYST)
+(Tone: Inquisitive, data-backed, consulting)
+
+"Ab aate hain hamare doosre persona par — Mr. Carlos, senior analyst at an international sports funding agency.
+
+Carlos ka mission hai funding grants allocate karna aur yeh analyze karna ki kis country ka financial investment actual Olympic medals mein sabse efficiently convert hota hai.
+
+Carlos use karte hain hamara 'Global Sports Investment vs. Medal Performance' Bubble Chart. Yahan X-axis par Millions of Dollars invested hain aur Y-axis par total medal count hai, jabki bubble size Medal Efficiency Percentage ko indicate karta hai.
+
+Aur yahan ek fascinating paradox nikal kar aata hai! USA aur China ka spend massive hai — 800 to 900 Million dollars. Lekin efficiency ke terms mein असली overperformers hain:
+Slovakia — jisne sirf $22M spend karke 38 medals jeete at 59.5% efficiency.
+Georgia — $21M ke investment par 42 medals aur 61.9% efficiency.
+Aur Ethiopia — jisne sirf $26M ke budget par 58 Olympic medals clinch kiye at a staggering 64.8% efficiency!
+
+Ab aate hain Carlos ke Regional Efficiency Donut Chart par:
+Data proves that South America leads global regional efficiency at 49.64%, followed closely by Europe/Asia at 45.98%. 
+
+Yeh data Carlos ke liye game-changer hai. Iske basis par international agencies rich nations ko subsidies dene ke bajaye Latin America aur African nations ke grassroots sports programs ko targeted grants distribute kar sakti hain, jahan har ek dollar ka return 3 times zyada podium finishes deliver karta hai." [pause 1.5s]
+
+--------------------------------------------------------------------------------
+
+[3:35 - 4:55] PART 4: SCENARIO 3 — WILLIAM ROBERT (BROADCAST DATA JOURNALIST)
+(Tone: Engaging, story-telling, dynamic)
+
+"Next, dekhte hain Scenario 3 — William Robert, data journalist and storyteller at an Olympic broadcast network.
+
+William ek international documentary series prepare kar rahe hain Olympic history par from 1992 to 2026. Unhe chahiye compelling, data-backed historical storylines.
+
+Sabse pehle William explore karte hain hamara 'Trend of Total Medals Awarded Over the Years' line chart. 
+Yahan woh viewers ko historical swings dikha sakte hain:
+Year 2000 Sydney Games mein total medals awarded drop hue the to a historic low of 305 medals.
+Wahi Tokyo 2020 mein naye events jaise Skateboarding aur Surfing add hone se medal count reach kiya apne all-time peak par — 363 medals!
+Aur upcoming Milano-Cortina 2026 Winter cycle mein yeh level hota hai 334 medals par.
+
+Iske baad William switch karte hain 'Comparing Medal Totals Across Olympic Hosts' chart par. 
+Yeh chart Olympic history ke sabse bade drama ko quantify karta hai — The Host Nation Advantage!
+Japan ne apne home turf Tokyo 2020 mein historic 105 medals jeete, jo unke away average se +176% ka massive jump tha!
+United States ne Atlanta aur Salt Lake mein 100 home medals secure kiye, aur China ne Beijing Games mein 93 medals clinch kiye.
+
+Aur Regional Medal Distribution Donut chart clearly demonstrate karta hai ki kaise Europe aur Asia ne historically overall medals par dominance maintain kiya hai, jo William ki documentary series ko ek seamless episodic narrative deta hai." [pause 1.5s]
+
+--------------------------------------------------------------------------------
+
+[4:55 - 5:55] PART 5: TABLEAU STORY MODE & INTERACTIVE DATASETS
+(Tone: Demonstrative, interactive, professional)
+
+"Ab chaliye dekhte hain hamara 'Tableau Interactive Story Mode'. 
+
+Tableau Story points ki tarah, yeh tab users ko ek step-by-step executive narrative walkthrough provide karta hai:
+- Step 1: The Modern Olympic Arc (1992 - 2026)
+- Step 2: The High-Yield Discipline Secret (Rowing & Shooting)
+- Step 3: The Investment vs. Glory Paradox (Slovakia, Georgia, Ethiopia)
+- Step 4: The Home Turf Phenomenon
+
+Aur sabse best part — 'Data Catalog & CSV Export' tab mein hamare pass pre-structured, clean datasets hain:
+- athletes_disciplines.csv
+- medal_results.csv
+- sports_investment.csv
+- host_nations.csv
+- yearly_trends.csv
+
+Aap in CSV files ko one-click mein download karke directly Tableau Desktop ya Tableau Public mein connect kar sakte hain aur drag-and-drop visualizations reproduce kar sakte hain." [pause 1s]
+
+--------------------------------------------------------------------------------
+
+[5:55 - 6:40] PART 6: TECHNICAL EXCELLENCE & CONCLUSION
+(Tone: Proud, concluding, crisp)
+
+"Technical architecture ki baat karein toh yeh platform pure semantic HTML5, modular CSS3 with Olympic Rings branding, vanilla ES6 JavaScript, aur Chart.js 4.4 par engineered hai. Yeh zero server dependencies ke sath 100% client-side execute hota hai at butter-smooth 60 frames per second.
+
+Saath hi dashboard ke top bar mein hamara 'Watch Demo Video' feature integrated hai, jahan evaluation committee ke liye Loom, YouTube aur interactive player links available hain.
+
+Yeh project showcase karta hai ki kaise modern data analytics aur structured visual storytelling sports policy, national budget allocation aur media broadcasting ko transform kar sakti hai.
+
+Thank you so much for your time and interest in Global Olympic Sports Performance Analytics!" [pause 2s]
+
+================================================================================
+END OF SCRIPT (Approx 970 words • Speaking duration: 6 mins 30 secs to 7 mins)
+================================================================================

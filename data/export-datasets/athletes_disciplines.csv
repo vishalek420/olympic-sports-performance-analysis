@@ -1,0 +1,51 @@
+sport,avgMedalsPerAthlete,totalAthletes,totalMedals,category,season,yieldCategory
+Rowing,6.916,412,2850,Water Sports,Summer,High-Yield
+Shooting,6.731,398,2679,Precision,Summer,High-Yield
+Swimming,5.824,850,4950,Aquatics,Summer,High-Yield
+Canoeing / Kayak,5.412,360,1948,Water Sports,Summer,High-Yield
+Gymnastics (Artistic),5.15,420,2163,Artistic,Summer,High-Yield
+Cycling (Track),4.98,340,1693,Cycling,Summer,High-Yield
+Athletics (Track & Field),4.68,1850,8658,Track & Field,Summer,Moderate-Yield
+Sailing,4.35,380,1653,Water Sports,Summer,Moderate-Yield
+Equestrian,3.92,290,1137,Mounted,Summer,Moderate-Yield
+Speed Skating,3.86,280,1081,Ice Sports,Winter,Moderate-Yield
+Fencing,3.75,310,1162,Combat,Summer,Moderate-Yield
+Biathlon,3.64,260,946,Snow Sports,Winter,Moderate-Yield
+Cross-Country Skiing,3.51,340,1193,Snow Sports,Winter,Moderate-Yield
+Weightlifting,3.42,320,1094,Strength,Summer,Moderate-Yield
+Judo,3.25,380,1235,Combat,Summer,Moderate-Yield
+Wrestling (Freestyle/Greco),3.12,410,1279,Combat,Summer,Moderate-Yield
+Archery,2.94,240,706,Precision,Summer,Low-Yield
+Boxing,2.85,390,1111,Combat,Summer,Low-Yield
+Alpine Skiing,2.76,330,911,Snow Sports,Winter,Low-Yield
+Diving,2.68,250,670,Aquatics,Summer,Low-Yield
+Figure Skating,2.54,190,483,Ice Sports,Winter,Low-Yield
+Short Track Speed Skating,2.45,180,441,Ice Sports,Winter,Low-Yield
+Badminton,2.38,210,500,Racquet,Summer,Low-Yield
+Table Tennis,2.29,210,481,Racquet,Summer,Low-Yield
+Snowboard,2.18,220,480,Snow Sports,Winter,Low-Yield
+Freestyle Skiing,2.12,230,488,Snow Sports,Winter,Low-Yield
+Taekwondo,1.98,210,416,Combat,Summer,Low-Yield
+Triathlon,1.85,160,296,Endurance,Summer,Low-Yield
+Bobsleigh,1.76,180,317,Sliding,Winter,Low-Yield
+Luge,1.68,150,252,Sliding,Winter,Low-Yield
+Skeleton,1.54,110,169,Sliding,Winter,Low-Yield
+Ski Jumping,1.48,150,222,Snow Sports,Winter,Low-Yield
+Nordic Combined,1.42,110,156,Snow Sports,Winter,Low-Yield
+Modern Pentathlon,1.35,120,162,Multi-discipline,Summer,Low-Yield
+Curling,1.28,140,179,Ice Sports,Winter,Low-Yield
+Tennis,1.21,240,290,Racquet,Summer,Low-Yield
+Beach Volleyball,1.15,140,161,Team,Summer,Low-Yield
+Water Polo,0.98,280,274,Team,Summer,Low-Yield
+Handball,0.89,360,320,Team,Summer,Low-Yield
+Basketball,0.82,340,279,Team,Summer,Low-Yield
+Volleyball,0.79,340,269,Team,Summer,Low-Yield
+Field Hockey,0.74,380,281,Team,Summer,Low-Yield
+Football (Soccer),0.69,480,331,Team,Summer,Low-Yield
+Ice Hockey,0.65,420,273,Team,Winter,Low-Yield
+Rugby Sevens,0.61,260,159,Team,Summer,Low-Yield
+Skateboarding,0.58,120,70,Urban,Summer,Low-Yield
+Sport Climbing,0.52,110,57,Urban,Summer,Low-Yield
+Surfing,0.49,110,54,Water Sports,Summer,Low-Yield
+Breaking,0.45,90,41,Urban,Summer,Low-Yield
+Ski Mountaineering,0.42,85,36,Snow Sports,Winter,Low-Yield

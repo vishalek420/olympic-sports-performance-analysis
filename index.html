@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Global Olympic Sports Performance Analysis (1992 - 2026)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- Ambient Ambient Orbs -->
+<div class="bg-mesh">
+  <div class="mesh-orb orb-1"></div>
+  <div class="mesh-orb orb-2"></div>
+  <div class="mesh-orb orb-3"></div>
+</div>
+
+<!-- ==================== SIDEBAR ==================== -->
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <div class="olympic-rings-badge">
+      <div class="ring-dot ring-blue"></div>
+      <div class="ring-dot ring-yellow"></div>
+      <div class="ring-dot ring-black"></div>
+      <div class="ring-dot ring-green"></div>
+      <div class="ring-dot ring-red"></div>
+    </div>
+    <div class="sidebar-brand">
+      <h1>Olympic Analytics</h1>
+      <p>Performance & ROI Platform</p>
+    </div>
+  </div>
+
+  <!-- Personas & Scenarios -->
+  <div class="personas-wrapper">
+    <div class="section-label">Select Stakeholder Scenario</div>
+    
+    <!-- Scenario 1: Ms. Priya -->
+    <button class="persona-btn active" data-persona="priya">
+      <div class="persona-avatar avatar-priya">👩‍💼</div>
+      <div class="persona-meta">
+        <h4>Ms. Priya</h4>
+        <span>NOC Performance Strategist</span>
+      </div>
+    </button>
+
+    <!-- Scenario 2: Mr. Carlos -->
+    <button class="persona-btn" data-persona="carlos">
+      <div class="persona-avatar avatar-carlos">👨‍💻</div>
+      <div class="persona-meta">
+        <h4>Mr. Carlos</h4>
+        <span>Sports Investment Analyst</span>
+      </div>
+    </button>
+
+    <!-- Scenario 3: William Robert -->
+    <button class="persona-btn" data-persona="william">
+      <div class="persona-avatar avatar-william">🎙️</div>
+      <div class="persona-meta">
+        <h4>William Robert</h4>
+        <span>Broadcast Data Journalist</span>
+      </div>
+    </button>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav class="nav-group">
+    <div class="section-label">Tableau Dashboards</div>
+    <a href="#" class="nav-link" data-tab="overview">
+      <span class="nav-icon">📊</span> Overview & Benchmarks
+    </a>
+    <a href="#" class="nav-link active" data-tab="priya">
+      <span class="nav-icon">🎯</span> Scenario 1: NOC Strategy
+      <span class="nav-pill">Priya</span>
+    </a>
+    <a href="#" class="nav-link" data-tab="carlos">
+      <span class="nav-icon">💰</span> Scenario 2: ROI & Grants
+      <span class="nav-pill">Carlos</span>
+    </a>
+    <a href="#" class="nav-link" data-tab="william">
+      <span class="nav-icon">📺</span> Scenario 3: Media Stories
+      <span class="nav-pill">William</span>
+    </a>
+    <a href="#" class="nav-link" data-tab="story">
+      <span class="nav-icon">📑</span> Tableau Story Mode
+      <span class="nav-pill" style="background:rgba(252,177,49,0.2);color:#FCB131;">Interactive</span>
+    </a>
+    <a href="#" class="nav-link" data-tab="dataset">
+      <span class="nav-icon">📁</span> Data Catalog & CSVs
+    </a>
+    <a href="demo.html" class="nav-link" style="margin-top:14px; background:rgba(238,51,78,0.12); border:1px solid rgba(238,51,78,0.3); color:#f87171;">
+      <span class="nav-icon">🎬</span> Watch Demo Video
+      <span class="nav-pill" style="background:#EE334E;color:#fff;">HD</span>
+    </a>
+  </nav>
+
+  <div class="sidebar-footer">
+    <div class="status-badge">
+      <div class="status-indicator-dot"></div>
+      <span>Timeline: 1992 - 2026 (Summer & Winter)</span>
+    </div>
+  </div>
+</aside>
+
+<!-- ==================== MAIN CONTENT ==================== -->
+<main class="main-wrapper">
+
+  <!-- Top Sticky Bar -->
+  <header class="top-bar">
+    <div class="top-bar-left">
+      <div>
+        <div class="breadcrumb-trail">Global Olympic Analysis / <strong id="breadcrumb-current">Scenario 1: Ms. Priya — NOC Performance Strategy</strong></div>
+        <h2 class="page-title" id="current-tab-title">Scenario 1: Ms. Priya — NOC Performance Strategy</h2>
+      </div>
+    </div>
+    <div class="top-bar-right">
+      <a href="demo.html" class="btn btn-primary" style="background:linear-gradient(135deg, #EE334E, #FCB131);">
+        <span>🎬</span> Demo Walkthrough
+      </a>
+      <a href="data/export-datasets/medal_results.csv" download class="btn btn-outline">
+        <span>📥</span> Export CSVs
+      </a>
+    </div>
+  </header>
+
+  <!-- Filter Ribbon Bar -->
+  <div class="filter-bar">
+    <div class="filter-item">
+      <span>Games Period:</span>
+      <select class="filter-select">
+        <option>1992 – 2026 (All Cycles)</option>
+        <option>2012 – 2026 (Modern Era)</option>
+        <option>Summer Games Only</option>
+        <option>Winter Games Only</option>
+      </select>
+    </div>
+    <div class="filter-item">
+      <span>Sport Discipline:</span>
+      <select class="filter-select" id="sport-category-select">
+        <option value="all">All Disciplines (50 Sports)</option>
+        <option value="Water Sports">Water Sports (Rowing, Canoeing)</option>
+        <option value="Precision">Precision (Shooting, Archery)</option>
+        <option value="Aquatics">Aquatics (Swimming, Diving)</option>
+        <option value="Combat">Combat (Judo, Wrestling, Boxing)</option>
+        <option value="Ice Sports">Ice Sports (Speed Skating, Figure)</option>
+        <option value="Snow Sports">Snow Sports (Skiing, Biathlon)</option>
+      </select>
+    </div>
+    <div class="filter-item">
+      <span>Geographic Region:</span>
+      <select class="filter-select">
+        <option>All Regions (Global)</option>
+        <option>South America (Highest Efficiency: 49.64%)</option>
+        <option>Europe/Asia (Dominant Volume: 45.98%)</option>
+        <option>Africa (Endurance Champions)</option>
+        <option>Oceania</option>
+        <option>North America</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Content Body -->
+  <div class="content-body">
+
+    <!-- ======================================================== -->
+    <!-- TAB 1: OVERVIEW & BENCHMARKS -->
+    <!-- ======================================================== -->
+    <div id="tab-overview" class="dashboard-tab">
+      <div class="kpi-grid">
+        <div class="kpi-card kpi-blue">
+          <div class="kpi-head"><span class="kpi-icon">🌍</span><span class="kpi-tag info">Countries</span></div>
+          <div class="kpi-value">60+</div>
+          <div class="kpi-sub">National Olympic Committees Tracked</div>
+        </div>
+        <div class="kpi-card kpi-yellow">
+          <div class="kpi-head"><span class="kpi-icon">🥇</span><span class="kpi-tag alert">Total Medals</span></div>
+          <div class="kpi-value">5,894</div>
+          <div class="kpi-sub">1992 to 2026 Olympic History</div>
+        </div>
+        <div class="kpi-card kpi-green">
+          <div class="kpi-head"><span class="kpi-icon">⚡</span><span class="kpi-tag good">Top Per-Athlete</span></div>
+          <div class="kpi-value">6.916</div>
+          <div class="kpi-sub">Rowing (Highest Medal Yield)</div>
+        </div>
+        <div class="kpi-card kpi-red">
+          <div class="kpi-head"><span class="kpi-icon">👑</span><span class="kpi-tag alert">Medal Leader</span></div>
+          <div class="kpi-value">735</div>
+          <div class="kpi-sub">United States (China #2 at 696)</div>
+        </div>
+        <div class="kpi-card kpi-purple">
+          <div class="kpi-head"><span class="kpi-icon">📈</span><span class="kpi-tag good">Regional ROI</span></div>
+          <div class="kpi-value">49.64%</div>
+          <div class="kpi-sub">South America Efficiency Leader</div>
+        </div>
+      </div>
+
+      <div class="charts-grid-2">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>🏆 Global Olympic Medal Leaders (1992 - 2026)</h3>
+              <p>Top countries by gold, silver, and bronze breakdown</p>
+            </div>
+          </div>
+          <div class="chart-box tall"><canvas id="chart-overview-top-countries"></canvas></div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>🌐 Regional Olympic Medal Share</h3>
+              <p>Proportion of historical medals won by continent</p>
+            </div>
+          </div>
+          <div class="chart-box tall"><canvas id="chart-overview-regional-share"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 2: SCENARIO 1 - MS. PRIYA (NOC PERFORMANCE STRATEGIST) -->
+    <!-- ======================================================== -->
+    <div id="tab-priya" class="dashboard-tab active">
+      <div class="insights-row">
+        <div class="insight-card">
+          <h4>🚣 High-Yield Discipline Discovery</h4>
+          <p>
+            <strong>Rowing (6.916 medals/athlete)</strong> and <strong>Shooting (6.731 medals/athlete)</strong> generate the highest medal return per athlete sent. Recommending shifting 30% of NOC development budgets toward these categories.
+          </p>
+        </div>
+        <div class="insight-card gold">
+          <h4>🎯 Global Benchmark Comparison</h4>
+          <p>
+            The <strong>United States (735 total medals)</strong> and <strong>China (696 total medals)</strong> represent the top international benchmarks. Middle-tier NOCs must specialize in niche multi-medal categories to compete effectively.
+          </p>
+        </div>
+        <div class="insight-card green">
+          <h4>📉 Strategic Divestment Advice</h4>
+          <p>
+            Disciplines such as large team ball sports (Soccer at 0.690, Ice Hockey at 0.650) show extremely low per-athlete medal yield. Priya recommends prioritizing precision and multi-event disciplines.
+          </p>
+        </div>
+      </div>
+
+      <div class="charts-grid-2">
+        <!-- Avg Medals per Athlete by Sport Category (Horizontal Bar Chart) -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>🚣 Avg Medals per Athlete by Sport Category</h3>
+              <p>Identifying high-yield Olympic disciplines for national funding (Rowing: 6.916, Shooting: 6.731)</p>
+            </div>
+          </div>
+          <div class="chart-box tall"><canvas id="chart-priya-avg-medals-per-athlete"></canvas></div>
+        </div>
+
+        <!-- Global Performance Metrics by Country -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>🥇 Global Performance Metrics by Country</h3>
+              <p>Benchmarking total medals: USA (735) and China (696) against competing nations</p>
+            </div>
+          </div>
+          <div class="chart-box tall"><canvas id="chart-priya-global-metrics"></canvas></div>
+        </div>
+
+        <!-- Portfolio Allocation Radar -->
+        <div class="chart-card col-span-2">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>🧭 Discipline Portfolio Allocation Radar: Recommended vs. Traditional</h3>
+              <p>Optimizing investment strategy toward high-yield water sports and precision disciplines</p>
+            </div>
+          </div>
+          <div class="chart-box"><canvas id="chart-priya-discipline-matrix"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 3: SCENARIO 2 - MR. CARLOS (SPORTS INVESTMENT ANALYST) -->
+    <!-- ======================================================== -->
+    <div id="tab-carlos" class="dashboard-tab">
+      <div class="insights-row">
+        <div class="insight-card green">
+          <h4>🌟 Overperforming High-Efficiency Nations</h4>
+          <p>
+            Countries like <strong>Slovakia</strong> ($22M spend → 38 medals, 59.5% efficiency), <strong>Georgia</strong> ($21M → 42 medals, 61.9% efficiency), and <strong>Ethiopia</strong> ($26M → 58 medals, 64.8% efficiency) deliver disproportionately strong returns.
+          </p>
+        </div>
+        <div class="insight-card gold">
+          <h4>🌎 South America Leads Regional Efficiency</h4>
+          <p>
+            <strong>South America leads all regions at 49.64% efficiency</strong>, followed by Europe/Asia at 45.98%. This data directly justifies increasing international grant allocations to South American athletic programs.
+          </p>
+        </div>
+        <div class="insight-card">
+          <h4>💡 Grant Re-Allocation Strategy</h4>
+          <p>
+            International development funds should prioritize underfunded yet high-potential federations in Latin America and East Africa where each million dollars invested yields up to 3x more Olympic podiums.
+          </p>
+        </div>
+      </div>
+
+      <div class="charts-grid-2">
+        <!-- Global Sports Investment vs. Medal Performance (Bubble Chart) -->
+        <div class="chart-card col-span-2">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>💰 Global Sports Investment vs. Medal Performance (Bubble Analysis)</h3>
+              <p>X: Investment ($M) | Y: Actual Medals | Bubble Size: Efficiency % (Highlighting Slovakia, Georgia, Ethiopia)</p>
+            </div>
+          </div>
+          <div class="chart-box tall"><canvas id="chart-carlos-investment-vs-medals"></canvas></div>
+        </div>
+
+        <!-- Average Medal Efficiency Percentage by Region (Donut / Pie) -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>🍩 Average Medal Efficiency Percentage by Region</h3>
+              <p>South America leads at 49.64% followed by Europe/Asia at 45.98%</p>
+            </div>
+          </div>
+          <div class="chart-box"><canvas id="chart-carlos-regional-efficiency"></canvas></div>
+        </div>
+
+        <!-- Grant Allocation Priority Ranking -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>🎯 High-Efficiency Grant Allocation Candidates</h3>
+              <p>Top nations achieving highest medal yield per dollar of investment</p>
+            </div>
+          </div>
+          <div class="chart-box"><canvas id="chart-carlos-grant-priorities"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 4: SCENARIO 3 - WILLIAM ROBERT (BROADCAST JOURNALIST) -->
+    <!-- ======================================================== -->
+    <div id="tab-william" class="dashboard-tab">
+      <div class="insights-row">
+        <div class="insight-card">
+          <h4>📈 Historic Medal Swings (1992 - 2026)</h4>
+          <p>
+            Olympic medal volume fluctuated between a <strong>historic low of 305 medals in 2000 (Sydney)</strong> to an <strong>all-time peak of 363 medals in 2020 (Tokyo)</strong>, with <strong>2026 (Milano-Cortina) recording 334 medals</strong>.
+          </p>
+        </div>
+        <div class="insight-card gold">
+          <h4>🇯🇵 The Home Turf Advantage</h4>
+          <p>
+            Host nations surge dramatically: <strong>Japan led all hosts with 105 medals</strong>, followed by the <strong>United States with 100 medals</strong> (Atlanta/Salt Lake), and <strong>China with 93 medals</strong> (Beijing).
+          </p>
+        </div>
+        <div class="insight-card green">
+          <h4>🌐 Regional Story Arc</h4>
+          <p>
+            Europe and Asia have historically dominated the overall medal distribution landscape, while the rise of Oceania and Africa creates captivating subplots for documentary episodes.
+          </p>
+        </div>
+      </div>
+
+      <div class="charts-grid-2">
+        <!-- Trend of Total Medals Awarded Over the Years (Line Chart) -->
+        <div class="chart-card col-span-2">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>📈 Trend of Total Medals Awarded Over the Years (1992 - 2026)</h3>
+              <p>Documenting swings: Low of 305 in 2000, Peak of 363 in 2020, and 334 in 2026</p>
+            </div>
+          </div>
+          <div class="chart-box tall"><canvas id="chart-william-medal-trend"></canvas></div>
+        </div>
+
+        <!-- Comparing Medal Totals Across Olympic Hosts (Bar Chart) -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>🏟️ Comparing Medal Totals Across Olympic Hosts</h3>
+              <p>Home nation performance boost: Japan (105), USA (100), China (93)</p>
+            </div>
+          </div>
+          <div class="chart-box"><canvas id="chart-william-host-comparison"></canvas></div>
+        </div>
+
+        <!-- Regional Medal Efficiency and Distribution by Sport -->
+        <div class="chart-card">
+          <div class="chart-header">
+            <div class="chart-title">
+              <h3>🌍 Regional Medal Distribution Landscape</h3>
+              <p>Historical dominance of Europe and Asia across Summer and Winter Games</p>
+            </div>
+          </div>
+          <div class="chart-box"><canvas id="chart-william-regional-dominance"></canvas></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 5: TABLEAU INTERACTIVE STORY MODE -->
+    <!-- ======================================================== -->
+    <div id="tab-story" class="dashboard-tab">
+      <div class="story-stepper-container">
+        <!-- Story Step Navigation -->
+        <div class="story-tabs-bar">
+          <button class="story-tab-btn active" data-step="1">
+            <span>1️⃣</span> The Modern Olympic Arc (1992–2026)
+          </button>
+          <button class="story-tab-btn" data-step="2">
+            <span>2️⃣</span> The High-Yield Discipline Secret
+          </button>
+          <button class="story-tab-btn" data-step="3">
+            <span>3️⃣</span> The Investment vs. Glory Paradox
+          </button>
+          <button class="story-tab-btn" data-step="4">
+            <span>4️⃣</span> Home Turf Phenomenon
+          </button>
+        </div>
+
+        <div class="story-body">
+          <!-- Slide 1 -->
+          <div class="story-slide active" id="story-slide-1">
+            <h3 style="font-size:22px; margin-bottom:10px; color:#fff;">Historical Evolution of the Games</h3>
+            <p style="color:var(--text-secondary); margin-bottom:20px; line-height:1.7;">
+              Between 1992 and 2026, the Olympic Games expanded from 257 medal events in Barcelona to a peak of 363 in Tokyo 2020. The addition of new disciplines like Skateboarding, Sport Climbing, and Surfing reflected shifting cultural dynamics, while total awarded medals leveled to 334 in the 2026 Milano-Cortina Winter cycle.
+            </p>
+            <div style="background:#070B14; border:1px solid var(--border-color); border-radius:12px; padding:20px; display:flex; justify-content:space-around; flex-wrap:wrap; gap:16px;">
+              <div style="text-align:center;">
+                <div style="font-size:28px; font-weight:800; color:#0081C8;">305</div>
+                <div style="font-size:11px; color:var(--text-muted); text-transform:uppercase;">Year 2000 Low (Sydney)</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-size:28px; font-weight:800; color:#00A651;">363</div>
+                <div style="font-size:11px; color:var(--text-muted); text-transform:uppercase;">Year 2020 Peak (Tokyo)</div>
+              </div>
+              <div style="text-align:center;">
+                <div style="font-size:28px; font-weight:800; color:#FCB131;">334</div>
+                <div style="font-size:11px; color:var(--text-muted); text-transform:uppercase;">Year 2026 Cycle (Milano)</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="story-slide" id="story-slide-2">
+            <h3 style="font-size:22px; margin-bottom:10px; color:#fff;">Rowing & Shooting: The Per-Athlete Return Powerhouses</h3>
+            <p style="color:var(--text-secondary); margin-bottom:20px; line-height:1.7;">
+              Ms. Priya's analysis uncovers a vital pattern for resource-constrained National Olympic Committees. While sports like Football and Basketball require 20+ athletes for a single medal opportunity, <strong>Rowing delivers 6.916 medals per athlete</strong> and <strong>Shooting achieves 6.731</strong>. Countries strategically concentrating resources into multiple rowing boat classes and shooting disciplines achieve significantly higher rank efficiency.
+            </p>
+            <div style="background:#070B14; border:1px solid var(--border-color); border-radius:12px; padding:20px;">
+              <span style="color:#00A651; font-weight:700;">Key Takeaway:</span> Strategic NOCs should deploy capital into sports with high event-to-athlete ratios rather than single-medal team sports.
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="story-slide" id="story-slide-3">
+            <h3 style="font-size:22px; margin-bottom:10px; color:#fff;">The Underdog Advantage: Regional Efficiency Leaders</h3>
+            <p style="color:var(--text-secondary); margin-bottom:20px; line-height:1.7;">
+              Mr. Carlos's investment bubble analysis shatters the myth that more money automatically buys more gold. While the USA ($920M) and China ($850M) dominate raw totals, nations like <strong>Slovakia, Georgia, and Ethiopia</strong> achieve extraordinary medal returns on minimal budgets. <strong>South America leads global regional efficiency at 49.64%</strong>, demonstrating high athletic grit and organic grassroots systems.
+            </p>
+            <div style="background:#070B14; border:1px solid var(--border-color); border-radius:12px; padding:20px;">
+              <span style="color:#FCB131; font-weight:700;">Grant Allocation Priority:</span> International funding agencies should target matching grants to South American and African federations to maximize global athletic equity.
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="story-slide" id="story-slide-4">
+            <h3 style="font-size:22px; margin-bottom:10px; color:#fff;">The Host Nation Effect: Up to 176% Performance Boost</h3>
+            <p style="color:var(--text-secondary); margin-bottom:20px; line-height:1.7;">
+              William Robert's broadcast storytelling showcases the legendary 'Home Turf Boost'. Hosting an Olympic Games historically boosts a country's medal haul by an average of 65%. <strong>Japan's record 105 home medals</strong> represented a staggering +176% surge over their historical away average. Familiar climate, home crowds, automatic qualification slots, and targeted decade-long host funding create undeniable competitive momentum.
+            </p>
+            <div style="background:#070B14; border:1px solid var(--border-color); border-radius:12px; padding:20px;">
+              <span style="color:#EE334E; font-weight:700;">Broadcast Narrative:</span> Host nations consistently outperform baseline expectations by 35% to 176%, providing the central emotional arc for global Olympic coverage.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================================================== -->
+    <!-- TAB 6: DATA CATALOG & TABLEAU EXPORT -->
+    <!-- ======================================================== -->
+    <div id="tab-dataset" class="dashboard-tab">
+      <div class="section-title" style="margin-bottom:20px;">
+        <h3 style="font-size:18px; font-weight:700;">📁 Olympic Datasets for Tableau & Analytics</h3>
+        <p style="color:var(--text-muted); font-size:12px;">Pre-structured CSV tables ready to import directly into Tableau Desktop / Tableau Public</p>
+      </div>
+
+      <!-- Sports Disciplines Table -->
+      <div class="data-table-wrapper">
+        <div class="table-toolbar">
+          <div class="table-title">
+            <h3>🚣 Athletes & Sport Disciplines Dataset (50 Sports)</h3>
+          </div>
+          <input type="text" id="sport-search-input" class="table-search-input" placeholder="Search sport (e.g. Rowing, Shooting)..." />
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Sport Discipline</th>
+                <th>Category</th>
+                <th>Season</th>
+                <th>Athletes</th>
+                <th>Medals</th>
+                <th>Avg Medals / Athlete</th>
+                <th>Strategic Yield</th>
+              </tr>
+            </thead>
+            <tbody id="sports-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Country Performance Table -->
+      <div class="data-table-wrapper" style="margin-top:28px;">
+        <div class="table-toolbar">
+          <div class="table-title">
+            <h3>🥇 Medal Results & Sports Investment by Country</h3>
+          </div>
+        </div>
+        <div style="overflow-x:auto;">
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Rank</th>
+                <th>Country</th>
+                <th>Region</th>
+                <th>Gold</th>
+                <th>Silver</th>
+                <th>Bronze</th>
+                <th>Total Medals</th>
+                <th>Est. Investment</th>
+                <th>Medal Efficiency</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+            <tbody id="countries-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+<script src="data/olympic-data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
